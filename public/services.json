@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "name": "Weddings",
+      "image": "https://i.ibb.co/ZdSxg4W/istockphoto-1169564701-612x612.jpg",
+      "price": "$1000",
+      "description": "Our wedding services are designed to make your special day an unforgettable experience. We take care of every detail, from the enchanting decorations to the exquisite catering. Your wedding day should reflect your unique love story, and our team is dedicated to creating the perfect atmosphere to say 'I do.' Whether you dream of a romantic garden wedding or a glamorous ballroom affair, we have the expertise and creativity to bring your vision to life. Let us turn your dreams into reality and craft a wedding day that you and your guests will cherish forever.",
+      "duration": "Full Day",
+      "capacity": "Up to 200 guests",
+      "bookingProcess": "Contact us to check availability, select your package, and make a deposit.",
+      "cancellationPolicy": "Cancellation must be made at least 30 days in advance for a full refund.",
+      "customizationOptions": "Customize your wedding theme, menu, and decorations to match your style.",
+      "testimonials": [
+        {
+          "author": "John and Jane",
+          "comment": "Our wedding was simply magical! Thank you for making our dreams come true."
+        },
+        {
+          "author": "Emily",
+          "comment": "I couldn't have asked for a more perfect wedding day. It was everything I ever wanted."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Birthday Parties",
+      "image": "https://i.ibb.co/jHNrZw9/istockphoto-542095594-612x612.jpg",
+      "price": "$500",
+      "description": "Our birthday party services are here to help you celebrate life's milestones with joy and enthusiasm. No matter your age, a birthday is a day to cherish, and we want to make it truly special for you. From themed decorations and delicious cakes to exciting games and entertainment, we've got it all covered. Whether you're planning a child's birthday party or a grand celebration for yourself, our team will create an unforgettable experience. Let us bring the magic to your next birthday party and make it a day to remember.",
+      "duration": "Half Day",
+      "capacity": "Up to 50 guests",
+      "bookingProcess": "Choose your theme, date, and package. Book online or contact us for assistance.",
+      "cancellationPolicy": "Cancellation is allowed up to 15 days before the event for a full refund.",
+      "customizationOptions": "Customize the party theme, cake design, and activities to suit your preferences.",
+      "testimonials": [
+        {
+          "author": "Sarah",
+          "comment": "My daughter's birthday party was a hit! Everything was perfect, and the kids had a blast."
+        },
+        {
+          "author": "Michael",
+          "comment": "I celebrated my 30th birthday with a fantastic party. It was unforgettable!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Anniversaries",
+      "image": "https://i.ibb.co/mbwCYky/istockphoto-1682628004-612x612.jpg",
+      "price": "$800",
+      "description": "Celebrate your milestone anniversaries with our expertly crafted anniversary celebration services. We understand that anniversaries hold a special place in your heart, and we're here to help you honor your enduring love. Whether you're celebrating one year or fifty, our team will create a romantic and unforgettable experience. From intimate dinners to grand soirées, we tailor our services to match your unique journey together. Let us transform your anniversary into a timeless and enchanting celebration that reaffirms your love.",
+      "duration": "Evening",
+      "capacity": "Up to 100 guests",
+      "bookingProcess": "Contact us with your anniversary date, preferences, and any special requests to get started.",
+      "cancellationPolicy": "Cancellation is allowed with a 7-day notice for a full refund.",
+      "customizationOptions": "Customize the anniversary theme, menu, and decorations to create a personalized experience.",
+      "testimonials": [
+        {
+          "author": "David and Lisa",
+          "comment": "Our 25th-anniversary celebration was simply magical. Thank you for making it perfect."
+        },
+        {
+          "author": "Sophia",
+          "comment": "I surprised my parents with an anniversary party, and they were deeply moved. It was beautiful."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Engagement Parties",
+      "image": "https://i.ibb.co/4pBwnxr/istockphoto-167762259-612x612.jpg",
+      "price": "$600",
+      "description": "Begin your journey to forever with a spectacular engagement party. Our engagement party services are designed to capture the essence of your love story and mark this momentous occasion. Whether you envision an intimate gathering or a lively bash, we have the creativity and expertise to make it happen. From venue selection to thematic decor and entertainment, we'll handle all the details, allowing you to savor every moment. Let us create an engagement party that sets the stage for a lifetime of love and happiness.",
+      "duration": "Evening",
+      "capacity": "Up to 75 guests",
+      "bookingProcess": "Contact us to check availability, select your package, and make a deposit.",
+      "cancellationPolicy": "Cancellation is allowed up to 14 days before the event for a full refund.",
+      "customizationOptions": "Customize the engagement party theme, decorations, and entertainment to match your style.",
+      "testimonials": [
+        {
+          "author": "Jessica and Mark",
+          "comment": "Our engagement party was incredible! Thank you for making it so memorable."
+        },
+        {
+          "author": "Daniel",
+          "comment": "I proposed to my fiancée at the engagement party, and it was a magical moment."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Retirement Parties",
+      "image": "https://i.ibb.co/fH0ZbLR/istockphoto-535199657-612x612.jpg",
+      "price": "$400",
+      "description": "Retire in style with our retirement party services. After years of hard work and dedication, you deserve a memorable send-off into the next chapter of your life. Whether you want a relaxed gathering or a grand celebration, we're here to make it happen. From personalized decor to heartfelt speeches, we'll ensure your retirement party reflects your accomplishments and future adventures. Let us create a retirement party that honors your achievements and brings your loved ones together for a joyous farewell.",
+      "duration": "Afternoon",
+      "capacity": "Up to 40 guests",
+      "bookingProcess": "Select your retirement party date, package, and any special requests. Book online or contact us for assistance.",
+      "cancellationPolicy": "Cancellation is allowed up to 10 days before the event for a full refund.",
+      "customizationOptions": "Customize the retirement party theme, decorations, and program to make it uniquely yours.",
+      "testimonials": [
+        {
+          "author": "Robert",
+          "comment": "My retirement party was a heartfelt and joyful event. Thank you for making it special."
+        },
+        {
+          "author": "Linda",
+          "comment": "Retiring was bittersweet, but the party made it a wonderful transition. I'll cherish the memories."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Baby Shower",
+      "image": "https://i.ibb.co/y0Y3QK5/istockphoto-1466720977-612x612.jpg",
+      "price": "$300",
+      "description": "Welcome the newest addition to your family with a heartwarming baby shower. Our baby shower services take care of all the details so you can focus on the excitement of parenthood. From themed decorations to delightful games and activities, we create a magical atmosphere for your special day. Whether it's your first baby or an addition to your growing family, we'll make your baby shower an event to remember. Let us help you celebrate this joyful moment and create lasting memories with your loved ones.",
+      "duration": "Morning",
+      "capacity": "Up to 30 guests",
+      "bookingProcess": "Contact us to check availability, select your baby shower date, and discuss your preferences.",
+      "cancellationPolicy": "Cancellation is allowed up to 7 days before the event for a full refund.",
+      "customizationOptions": "Customize the baby shower theme, decorations, and activities to match your baby's gender or your preferences.",
+      "testimonials": [
+        {
+          "author": "Jennifer",
+          "comment": "My baby shower was perfect in every way. Thank you for making it so special."
+        },
+        {
+          "author": "Brian",
+          "comment": "We celebrated the upcoming arrival of our twins with a beautiful baby shower. It was fantastic."
+        }
+      ]
+    }
+  ]
+  

@@ -3,14 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="mt-20 ">
-      <footer className="footer p-10 bg-base-200 text-base-content flex flex-col items-center lg:items-start lg:flex-row justify-evenly gap-9">
-        <aside>
-          
-          <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
-          </p>
+      <footer className="footer p-10 bg-base-200  text-base-content flex flex-col items-center lg:items-start lg:flex-row justify-evenly gap-9">
+        <aside className="text-center">
+            <p className="text-2xl font-bold text-center">DreamyDaysPlanner</p>
+            <p className="text-center font-semibold">Your dream our plan</p>
+            <p>
+              Providing reliable event service since 2020
+            </p>
         </aside>
         <nav>
           <header className="footer-title">Services</header>

@@ -5,6 +5,7 @@ import ErrorPage from '../../Pages/ErrorPage/ErrorPage';
 import Home from '../../Pages/Home/Home';
 import Login from '../../Pages/Login/Login';
 import Register from '../../Pages/Register/Register';
+import EventDetails from '../../Pages/EventDetails/EventDetails';
 
 const routes= createBrowserRouter([
     {
@@ -14,7 +15,7 @@ const routes= createBrowserRouter([
         children:[
             {
                 path:'/',
-                loader:()=>fetch(`services.json`),
+                loader:()=>fetch(`/services.json`),
                 element:<Home></Home>
             },
             {
@@ -24,6 +25,11 @@ const routes= createBrowserRouter([
             {
                 path:'/register',
                 element:<Register></Register>
+            },
+            {
+                path:'/eventdetails/:id',
+                loader:()=>fetch(`../services.json`),
+                element:<EventDetails></EventDetails>
             }
         ]
     }

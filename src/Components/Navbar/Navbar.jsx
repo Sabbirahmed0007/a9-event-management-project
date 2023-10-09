@@ -6,7 +6,7 @@ const Navbar = () => {
     const navLink=<>
         <div className='flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-8 '>
             <NavLink className="focus:text-red-600 font-bold" to={'/'}>Home</NavLink>
-            <NavLink className="focus:text-red-600 font-bold" to={'/'}>Home</NavLink>
+            <NavLink className="focus:text-red-600 font-bold" to={'/service'}>Service</NavLink>
             <NavLink className="focus:text-red-600 font-bold" to={'/register'}>Register</NavLink>
 
         </div>

@@ -3,8 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import Events from '../../Components/Event/Events';
 
 const Home = () => {
-    const events= useLoaderData();
-    console.log(events);
+    const events= useLoaderData([]);
+    // console.log(events);
     return (
         <div>
             <h2 className='text-3xl font-extrabold my-2 font-poppins bg-gradient-to-r from-orange-600 to-green-400 text-transparent bg-clip-text'>Our Services</h2>

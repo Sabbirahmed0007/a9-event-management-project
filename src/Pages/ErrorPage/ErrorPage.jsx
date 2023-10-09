@@ -2,9 +2,9 @@ import React from 'react';
 
 const ErrorPage = () => {
     return (
-        <div>
+        <div className='mt-40 font-extrabold text-2xl'>
             <h1>404!</h1>
-            <h2>Not found</h2>
+            <h2 className='text-red-500'>Not found</h2>
         </div>
     );
 };

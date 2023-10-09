@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Events = ({event}) => {
 
-    const {name, image, price, description}=event;
+    const {name, image, price, description,id}=event;
 
     return (
         <div className=' mx-4 rounded-lg bg-cyan-600 text-white font-poppins drop-shadow-lg mt-5'>
@@ -12,7 +13,9 @@ const Events = ({event}) => {
                 <p className='text-left text-lg font-semibold my-2'>Price: {price}</p>
                 <p className='text-left h-20'>{description.slice(0, 80)} <span className='underline'>Click on the details button to See more </span>...</p>
                 <div className='text-right'>
-                    <button className='btn font-bold btn-md my-4'>Details</button>
+                    <Link to={`/eventdetails/${id}`}>
+                        <button className='btn font-bold btn-md my-4'>Details</button>
+                    </Link>
                 </div>
             </div>
             

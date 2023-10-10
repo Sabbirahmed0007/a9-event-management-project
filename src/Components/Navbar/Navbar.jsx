@@ -10,8 +10,9 @@ const Navbar = () => {
     const navLink=<>
         <div className='flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-8 '>
             <NavLink className="focus:text-red-600 font-bold" to={'/'}>Home</NavLink>
-            <NavLink className="focus:text-red-600 font-bold" to={'/about'}>about</NavLink>
             <NavLink className="focus:text-red-600 font-bold" to={'/register'}>Register</NavLink>
+            <NavLink className="focus:text-red-600 font-bold" to={'/about'}>About</NavLink>
+            <NavLink className="focus:text-red-600 font-bold" to={'/gallery'}>Gallery</NavLink>
 
         </div>
 

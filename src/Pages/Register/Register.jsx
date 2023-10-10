@@ -1,11 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
+import { BiSolidShow } from 'react-icons/Bi';
+import { AiFillEyeInvisible } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 
 const Register = () => {
     const {googleSignIn, githubSignIn, createUser}=useContext(AuthContext);
+
+    const [error, setError]=useState('');
+    const [errorr, setErrorr]=useState('');
+    const [show, setshow]= useState(false);
 
     const handleRegister=(e)=>{
         e.preventDefault();
@@ -14,6 +20,14 @@ const Register = () => {
         const password= e.target.password.value;
         const terms= e.target.terms.checked;
         console.log(name, email, password, terms);
+        if(!/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/.test(password)){
+
+            setError('Password must contain 8 charecters, a number, letter or  special character')
+
+        }
+        e.target.name.value = '';
+        e.target.email.value = '';
+        e.target.password.value = '';
 
         // createUser with email and password
         createUser(email, password)
@@ -22,6 +36,8 @@ const Register = () => {
         })
         .catch(error=>{
             console.error('Error', error.message);
+            setError('Error', error.message);
+
         })
         
 
@@ -46,6 +62,7 @@ const Register = () => {
         })
         .catch(error=>{
             console.error("Error", error);
+            setErrorr("Error", error);
         })
     }
 
@@ -64,9 +81,15 @@ const Register = () => {
                         <div>
                             <input  type="email" name="email" id="email" className='my-4 w-80 p-4 outline-none rounded-lg text-sm' placeholder='Enter your email...' />
                         </div>
-                        <div>
-                            <input  type="password" name="password" id="password" className='my-4 w-80 p-4 outline-none rounded-lg text-sm' placeholder='Password must be 6 characters or longer' />
+                        <div className='relative'>
+                            <input  type={show ? "text" : "password"}name="password" id="password" className='my-4 w-80 p-4 outline-none rounded-lg text-sm' placeholder='Password must be 8 characters or longer' />
+                            <p onClick={()=>setshow(!show)} className='absolute right-20 lg:right-40 top-9'>
+                                {
+                                    show? <BiSolidShow className=' text-xl'></BiSolidShow>:<AiFillEyeInvisible className='text-xl'></AiFillEyeInvisible>
+                                }
+                            </p>
                         </div>
+                        <p>{error}</p>
                         <div className='text-sm text-left w-80 mx-auto'>
                             <input type="checkbox" name="terms" id="terms" /> {/* Added an id for 'for' attribute */}
                             <label htmlFor="terms">Accept <a className='link' href="/">Terms & Conditions</a></label>
@@ -83,6 +106,7 @@ const Register = () => {
                         </p>
                     </div>
                     <div className='px-4 py-3  font-bold w-full border  rounded-xl'>
+                        <p className='text-center'>{errorr}</p>
                         <h2 className="text-3xl text-center">Login With</h2>
                         <div className='text-center flex flex-col gap-2 my-4 lg:gap-1 items-center justify-center '>
                             <button onClick={handleSignInByGoogle}  className='btn btn-outline my-2 font-bold'>

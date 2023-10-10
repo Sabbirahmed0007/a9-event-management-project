@@ -1,0 +1,105 @@
+{
+    "team": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "bio": "Founder & CEO",
+        "pic": "https://i.ibb.co/pKvy2bG/istockphoto-949093706-612x612.jpg",
+        "experiences": [
+          "Over 15 years of experience in event planning.",
+          "Passionate about creating memorable experiences."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "bio": "Creative Director",
+        "pic": "https://example.com/jane-smith.jpg",
+        "experiences": [
+          "10 years of expertise in event design and decor.",
+          "Known for innovative and unique event concepts."
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "bio": "Head Chef",
+        "pic": "https://example.com/michael-johnson.jpg",
+        "experiences": [
+          "Culinary arts degree with 12 years of culinary experience.",
+          "Specializes in crafting exquisite event menus."
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "bio": "Marketing Manager",
+        "pic": "https://example.com/emily-davis.jpg",
+        "experiences": [
+          "Digital marketing expert with a focus on event promotion.",
+          "Successfully marketed numerous high-profile events."
+        ]
+      },
+      {
+        "id": 5,
+        "name": "David Brown",
+        "bio": "Event Coordinator",
+        "pic": "https://i.ibb.co/xgFXxpD/istockphoto-1609837741-612x612.jpg",
+        "experiences": [
+          "Experienced in managing events of all sizes and types.",
+          "Detail-oriented and dedicated to seamless event execution."
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Sophia Wilson",
+        "bio": "Decor Specialist",
+        "pic": "https://i.ibb.co/8MvN20V/istockphoto-1329641051-612x612.jpg",
+        "experiences": [
+          "Expertise in transforming event spaces with stunning decor.",
+          "Known for creating magical atmospheres."
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Daniel Lee",
+        "bio": "Entertainment Coordinator",
+        "pic": "https://example.com/daniel-lee.jpg",
+        "experiences": [
+          "Seasoned in arranging entertainment options for events.",
+          "Offers a wide range of entertainment choices."
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Linda Taylor",
+        "bio": "Client Relations Manager",
+        "pic": "https://i.ibb.co/Jm8RfFR/istockphoto-499505952-612x612.jpg",
+        "experiences": [
+          "Exceptional communication skills and client-focused approach.",
+          "Dedicated to ensuring client satisfaction."
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Robert Harris",
+        "bio": "Logistics Coordinator",
+        "pic": "https://i.ibb.co/sVtvgLK/istockphoto-684889940-612x612.jpg",
+        "experiences": [
+          "Efficiently manages event logistics and vendor coordination.",
+          "Ensures all event components run smoothly."
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Jennifer Clark",
+        "bio": "Photographer & Videographer",
+        "pic": "https://i.ibb.co/b7mZs9W/istockphoto-1098006572-612x612.jpg",
+        "experiences": [
+          "Captures the essence of events through photography and videography.",
+          "Creates lasting memories with stunning visuals."
+        ]
+      }
+    ]
+  }
+  

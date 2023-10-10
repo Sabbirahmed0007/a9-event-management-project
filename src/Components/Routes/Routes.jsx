@@ -7,6 +7,8 @@ import Login from '../../Pages/Login/Login';
 import Register from '../../Pages/Register/Register';
 import EventDetails from '../../Pages/EventDetails/EventDetails';
 import PrivateRoutes from './PrivateRoutes';
+import AboutUs from '../../Pages/About/AboutUs';
+import Gallery from '../Gallery/Gallery';
 
 const routes= createBrowserRouter([
     {
@@ -31,7 +33,17 @@ const routes= createBrowserRouter([
                 path:'/eventdetails/:id',
                 loader:()=>fetch(`../services.json`),
                 element:<PrivateRoutes><EventDetails></EventDetails></PrivateRoutes>
+            },
+            {
+                path:'/about',
+                element:<PrivateRoutes><AboutUs></AboutUs></PrivateRoutes>
+            },
+            {
+                path:'/gallery',
+                loader:()=>fetch(`/services.json`),
+                element:<PrivateRoutes><Gallery></Gallery></PrivateRoutes>
             }
+           
         ]
     }
 ])

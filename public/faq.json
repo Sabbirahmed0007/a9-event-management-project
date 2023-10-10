@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": "How do I book your event planning services?",
+      "answer": "To book our event planning services, please visit our 'Contact Us' page and fill out the inquiry form. We will get in touch with you shortly to discuss your event details and requirements."
+    },
+    {
+      "id": 2,
+      "question": "What types of events do you specialize in?",
+      "answer": "We specialize in a wide range of events, including weddings, birthday parties, anniversaries, engagement parties, retirement parties, and baby showers. We have experience in planning both private and corporate events."
+    },
+    {
+      "id": 3,
+      "question": "Can I customize the theme and decorations for my event?",
+      "answer": "Absolutely! We offer customization options for all our events. During the planning process, we'll work closely with you to understand your preferences and create a unique event that reflects your style and vision."
+    },
+    {
+      "id": 4,
+      "question": "What is your pricing structure?",
+      "answer": "Our pricing varies depending on the type of event, size, and specific services you require. We offer different packages to suit different budgets. For detailed pricing information, please visit our 'Pricing' page or contact us for a personalized quote."
+    },
+    {
+      "id": 5,
+      "question": "Do you provide catering services for events?",
+      "answer": "Yes, we can arrange catering services as part of your event package. We work with reputable caterers to provide a diverse range of menus and cuisines to meet your guests' preferences."
+    },
+    {
+      "id": 6,
+      "question": "What is your cancellation policy?",
+      "answer": "Our cancellation policy allows for a full refund if you cancel your event at least 30 days in advance. Cancellations made within 30 days may be subject to partial refunds, depending on the circumstances. Please refer to our 'Terms and Conditions' for more details."
+    }
+  ]
+  

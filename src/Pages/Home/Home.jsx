@@ -3,6 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import Events from '../../Components/Event/Events';
 import Banner from '../../Components/Banner/Banner';
 import AboutUs from '../About/AboutUs';
+import Team from '../../Components/Team/Team';
+import FAQ from '../../Components/FAQ/FAQ';
 
 const Home = () => {
     const events= useLoaderData([]);
@@ -23,6 +25,13 @@ const Home = () => {
                 {
                     events.map(event=><Events event={event} key={event.id}></Events>)
                 }
+            </div>
+
+            <div>
+                <Team></Team>
+            </div>
+            <div>
+                <FAQ></FAQ>
             </div>
             
 

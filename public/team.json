@@ -14,7 +14,7 @@
         "id": 2,
         "name": "Jane Smith",
         "bio": "Creative Director",
-        "pic": "https://example.com/jane-smith.jpg",
+        "pic": "https://i.ibb.co/5MJ7TP1/istockphoto-1198699446-612x612.jpg",
         "experiences": [
           "10 years of expertise in event design and decor.",
           "Known for innovative and unique event concepts."
@@ -24,7 +24,7 @@
         "id": 3,
         "name": "Michael Johnson",
         "bio": "Head Chef",
-        "pic": "https://example.com/michael-johnson.jpg",
+        "pic": "https://i.ibb.co/7vcsrgS/istockphoto-1164295067-612x612.jpg",
         "experiences": [
           "Culinary arts degree with 12 years of culinary experience.",
           "Specializes in crafting exquisite event menus."
@@ -34,7 +34,7 @@
         "id": 4,
         "name": "Emily Davis",
         "bio": "Marketing Manager",
-        "pic": "https://example.com/emily-davis.jpg",
+        "pic": "https://i.ibb.co/bRdPKrh/istockphoto-1491228771-612x612.jpg",
         "experiences": [
           "Digital marketing expert with a focus on event promotion.",
           "Successfully marketed numerous high-profile events."
@@ -64,7 +64,7 @@
         "id": 7,
         "name": "Daniel Lee",
         "bio": "Entertainment Coordinator",
-        "pic": "https://example.com/daniel-lee.jpg",
+        "pic": "https://i.ibb.co/5MJ7TP1/istockphoto-1198699446-612x612.jpg",
         "experiences": [
           "Seasoned in arranging entertainment options for events.",
           "Offers a wide range of entertainment choices."

@@ -24,9 +24,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: {}
 
-<i>Write your explanation here</i>
+<i>greeting and greetign are two different valiables.</i>
 
 </p>
 </details>
@@ -46,7 +46,7 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b></b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: "12"
@@ -77,7 +77,7 @@ console.log(food);
 
 #### Answer: A.
 
-<i>here Food is an array and info is a an object.they can't be replaced or redecclared</i>
+<i>here Food is an array and info is a an object.they can't be replaced or redeclared</i>
 
 </p>
 </details>
@@ -100,9 +100,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>The value of params is not declared or defined .</i>
 
 </p>
 </details>
@@ -135,3 +135,20 @@ console.log(count);
 </p>
 </details>
 
+
+
+
+# Project Features
+- It's a single Page Application(SPA) firebase based event management website.
+- There are 6 section on the home page , Navbar, banner(carousel), services cards, team, FAQs, and Footer section.
+- IN the navbar there is a logo and  four Routes where "Home", "Register", "About" "Gallery". and the is a button "Log out"/Log In"
+- In the banner section there is carousel banner seciton with 6 banner releted to event management.
+- In the Services section there are six card with distinguished events and data with a button . After clicking on the button it will take to another page is called details. the details regarding to the event will be visible there.
+- then there is a team section with multiple data and about their bio , occupations , experiences.
+- Then there is a section of FAQs with answers
+
+- then in the resigter page there is a form for registration 
+- then another routes is about us 
+- The next route is "Gallery and pictures are gathered /stored.
+- and a simple footer section
+- The website is responsible for  mobile(L), tablet, and dekstop.

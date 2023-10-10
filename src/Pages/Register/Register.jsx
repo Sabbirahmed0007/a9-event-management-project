@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 
 const Register = () => {
+    const {googleSignIn, githubSignIn, createUser}=useContext(AuthContext);
 
     const handleRegister=(e)=>{
         e.preventDefault();
@@ -13,8 +15,39 @@ const Register = () => {
         const terms= e.target.terms.checked;
         console.log(name, email, password, terms);
 
+        // createUser with email and password
+        createUser(email, password)
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error('Error', error.message);
+        })
+        
+
     }
 
+    const handleSignInByGoogle=()=>{
+
+        googleSignIn()
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error("Error", error);
+        })
+
+    }
+
+    const handleGithubSignIn=()=>{
+        githubSignIn()
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error("Error", error);
+        })
+    }
 
     return (
         <div>
@@ -23,7 +56,7 @@ const Register = () => {
                     <div className='border-b border-black p-4 pb-5 w-4/5 mx-auto'>
                         <h2 className='text-xl font-bold'>Register your account</h2>
                     </div>
-                    <form > 
+                    <form onSubmit={handleRegister}> 
                         <div>
                             <input  type="text" name="name" id="name" className='my-4 w-80 p-4 outline-none rounded-lg text-sm' placeholder='Your Name ...' />
                         </div>
@@ -52,11 +85,11 @@ const Register = () => {
                     <div className='px-4 py-3  font-bold w-full border  rounded-xl'>
                         <h2 className="text-3xl text-center">Login With</h2>
                         <div className='text-center flex flex-col gap-2 my-4 lg:gap-1 items-center justify-center '>
-                            <button  className='btn btn-outline my-2 font-bold'>
+                            <button onClick={handleSignInByGoogle}  className='btn btn-outline my-2 font-bold'>
                                 <FaGoogle className='text-xl'></FaGoogle>
                                 Log in with Google
                             </button>
-                            <button className='btn btn-outline my-2 font-bold'>
+                            <button onClick={handleGithubSignIn} className='btn btn-outline my-2 font-bold'>
                                 <FaGithub className='text-xl '></FaGithub>
                                 Log in with GitHub
                             </button>

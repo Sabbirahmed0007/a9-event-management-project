@@ -1,12 +1,16 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Events from '../../Components/Event/Events';
+import Banner from '../../Components/Banner/Banner';
 
 const Home = () => {
     const events= useLoaderData([]);
     // console.log(events);
     return (
         <div>
+            <div>
+                <Banner></Banner>
+            </div>
             <h2 className='text-3xl font-extrabold my-2 font-poppins bg-gradient-to-r from-orange-600 to-green-400 text-transparent bg-clip-text'>Our Services</h2>
             <p className='mb-9 font-bold'>We provide you the Best service</p>
 

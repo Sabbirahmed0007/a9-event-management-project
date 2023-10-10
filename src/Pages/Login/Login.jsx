@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
+import { Result } from 'postcss';
 
 const Login = () => {
+    const {SignIn}= useContext(AuthContext);
 
     const handleLogIN=(e)=>{
         e.preventDefault();
@@ -10,6 +13,15 @@ const Login = () => {
         const email= e.target.email.value;
         const password= e.target.password.value;
         console.log(email, password)
+
+        // sign in with email and password
+        SignIn(email, password)
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error("Error", error.message);
+        })
     }
 
     return (
@@ -37,22 +49,9 @@ const Login = () => {
                     Don't Have An Account ? <Link className='link' to={'/register'}>Register</Link>
                     </p>
                 </div>
-                <div className='px-4 py-3  font-bold w-full border  rounded-xl'>
-                    <h2 className="text-3xl text-center">Login With</h2>
-                    <div className='text-center flex flex-col lg:flex-row gap-2 mt-3 lg:my-4 lg:gap-1 items-center justify-evenly'>
-                        <button  className='btn btn-outline my-2'>
-                            <FaGoogle></FaGoogle>
-                            Log in with Google
-                        </button>
-                        <button className='btn btn-outline my-2'>
-                            <FaGithub></FaGithub>
-                            Log in with GitHub
-                        </button>
-                        
-                    </div>
+                
         
         
-                </div>
             </div>
         </div>
     );

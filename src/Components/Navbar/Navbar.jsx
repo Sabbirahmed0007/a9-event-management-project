@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
+import swal from 'sweetalert';
 
 const Navbar = () => {
+
+    const {logOut, user}= useContext(AuthContext);
 
     const navLink=<>
         <div className='flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-8 '>
@@ -12,6 +16,17 @@ const Navbar = () => {
         </div>
 
     </>
+
+    const handleLogOut=()=>{
+        logOut()
+        .then(()=>{
+            console.log('You logged out successfully');
+            swal("Good job!", "You Logged out successfully!", "success");
+        })
+        .catch(error=>{
+            console.error("Error", error.massage);
+        })
+    }
 
     return (
         <div>
@@ -25,7 +40,7 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                <h3 className="font-bold normal-case text-2xl">DreamyDaysPlanner</h3>
+                <h3 className="font-bold normal-case text-xl lg:mx-4 lg:text-2xl">DreamyDaysPlanner</h3>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 ">
@@ -33,7 +48,32 @@ const Navbar = () => {
                 </ul>
                 </div>
                 <div className="navbar-end list-none">
-                <li><Link className='btn  font-bold btn-sm' to={'/login'}>Log In</Link></li>
+                <div className="dropdown dropdown-end">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                        {
+                            user?<div className="w-10 rounded-full"><img src={user && user.photoURL} /></div>: " "
+                        }
+                        
+                    </label>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60 overflow-auto">
+                    <li>
+                        <a className="justify-between">
+                        Profile
+                        <span className="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a href="https://www.sabbirahmed3071@gmail.com">{user&& user.email}</a></li>
+                    <li><a>Settings</a></li>
+                    
+                    </ul>
+                </div>
+                {
+                    user? <Link onClick={handleLogOut} className='btn  font-bold btn-sm' to={'/'}>Log Out</Link>
+                    :
+                    <li><Link className='btn  font-bold btn-sm' to={'/login'}>Log In</Link></li>
+
+                }
+                
                 </div>
             </div>
         </div>

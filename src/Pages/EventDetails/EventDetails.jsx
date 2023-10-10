@@ -18,7 +18,7 @@ const EventDetails = () => {
     }
 
     return (
-        <div className='mx-3 bg-black text-white rounded-lg mt-5'>
+        <div className='mx-3 bg-black text-gray-200 rounded-lg mt-5'>
 
             <img src={image} alt="" className='w-full rounded-t-lg' />
 
